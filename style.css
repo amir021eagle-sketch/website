@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma;
+    background: linear-gradient(135deg, #090919, #242442);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    text-align: center;
+    background: #19192e;
+    border: 1px solid #444466;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #0008;
+}
+
+h2 {
+    color: #b99aff;
+}
+
+p {
+    color: #aaa;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.option {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background: #292941;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.option.locked {
+    background: #292941;
+}
+
+.option.locked:active {
+    background: red;
+}
+
+.option.active {
+    background: #145c40;
+    border-color: #20d997;
+}
+
+.option.selected {
+    background: #087d53;
+    border-color: #20d997;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.buttons button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+}
+
+#submit {
+    background: #8055e8;
+}
+
+#exit {
+    background: #e3344c;
+    position: relative;
+}
+
+#message {
+    margin-top: 20px;
+    color: #20d997;
+    font-size: 14px;
+    min-height: 20px;
+}
